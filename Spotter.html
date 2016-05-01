@@ -1,14 +1,119 @@
 <head>
   <title>Spotter</title>
+  <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="/bower_components/paper-drawer-panel/paper-drawer-panel.html">
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
 </body>
 
+<template name="layout1">
+  {{> Template.dynamic template=top}}
+  {{> Template.dynamic template=main}}
+</template>
+
+<template name="navigation">
+</template>
+
+<template name="back">
+  <div class="top-bar">
+    <a href="/">
+    <p class="section-title home exercise-page" style="padding-bottom:0;"> &#8695; Other Exercises </p>
+  </a>
+  <div class="icon-header-container">
+  <img src="/pics/nike_app_dumbell.png">
+</div>
+  <div class="row data-title">
+      <div class="active-underline">
+      <a href="/exercise/today">
+      today
+    </a>
+    </div>
+    <div class="active-underline">
+      <a href="/exercise/progress">
+      progress
+    </a>
+    </div>
+  </div>
+</div>
+</template>
+
+<template name="home">
+  <div class="home">
+  <h1 class="title">spotter</h1>
+  {{> exercises}}
+</div>
+  <div class="launch-game-container">
+  {{> game}}
+</div>
+</template>
+
+
+
+<template name="exercises">
+  <div id="exercisesContainer">
+    <p class="section-title"> Your Exercises </p>
+    <div class="row">
+        <a href="/exercise/today">
+        <div class="exercise">
+          <img src="/pics/nike_app_dumbell.png" class="icon-pics">
+        </div>
+        </a>
+        <a href="/exercise/today">
+        <div class="exercise">
+          <img src="/pics/nike_app_kettlebell.png" class="icon-pics">
+        </div>
+        </a>
+    </div>
+    <div class="row">
+    <a href="/exercise/today">
+    <div class="exercise">
+      <img src="/pics/nike_app_kettlebell.png" class="icon-pics">
+    </div>
+    </a>
+    <a href="/exercise/today">
+    <div class="exercise">
+      <img src="/pics/nike_app_dumbell.png" class="icon-pics">
+    </div>
+    </a>
+  </div>
+  </div>
+
+</template>
+
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <div style="padding-top: 100px">
+  <button>Reps</button>
+  <p>You've lifted {{counter}} times!</p>
+  </div>
+</template>
+
+
+<template name="yourExerciseToday">
+<div class="exercise-data-container">
+  <div class="today-stats">
+    SCORE:
+  </div>
+</div>
+</template>
+
+<template name="yourExerciseProgress">
+<div class="exercise-data-container">
+  <div class="today-stats">
+    REPS:
+  </div>
+  <div class="today-stats">
+    WEIGHT:
+  </div>
+  <div class="today-stats">
+    FORM:
+  </div>
+</div>
+</template>
+
+<template name="game">
+  <div class="banner">
+  <p class="section-title" style="color: white"> Launch Game! </p>
+</div>
 </template>

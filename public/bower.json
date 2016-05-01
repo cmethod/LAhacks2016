@@ -1,0 +1,21 @@
+{
+  "name": "Spotter",
+  "main": "Spotter.js",
+  "homepage": "https://github.com/cmethod/LAhacks2016",
+  "authors": [
+    "crystal <chencrystal6@gmail.com>"
+  ],
+  "description": "Fitness Social Game App",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#~1.0.9"
+  }
+}

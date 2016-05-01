@@ -2,6 +2,10 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
+  Template.navigation.events({
+  //  'click paper-icon-button': function(event, template){
+    //  $(event.currentTarget).toggleClass("paper-drawer-toggle")}
+  });
   Template.hello.helpers({
     counter: function () {
       return Session.get('counter');
