@@ -4,6 +4,11 @@ html {
 }
 body {
   overflow: hidden;
+  background-image: url("/pics/background.jpg");
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 .home {
   padding-left: 10vw;
@@ -18,16 +23,18 @@ a {
   font-size: 5vh;
   font-family: sans-serif;;
   letter-spacing: 0.5em;
-  color: #970015;
+  color: #C90C26;
   font-weight: bold;
+  display: inline-block;
+  border: 1vh solid #970015;
+  padding-left: 2vh;
+  margin-top: 2vh;
 }
 .logo {
-  border: 5px solid #970015;
-  padding-left: 2vh;
 
 }
 .section-title{
-  color: #576569;
+  color: white;
   font-family: "Arial Rounded MT Bold";
   font-size: 5vh;
   letter-spacing: 0.1em;
@@ -42,8 +49,8 @@ a {
 .exercise {
   height: 20vh;
   width: 20vh;
-  background-color: white;
-  opacity: 0.9;
+  background-color: darksalmon;
+  opacity: 0.95;
   margin: 2vh;
   -webkit-box-shadow: 0px 0px 165px -53px rgba(0,0,0,0.33);
 -moz-box-shadow: 0px 0px 165px -53px rgba(0,0,0,0.33);
@@ -67,6 +74,7 @@ box-shadow: 0px 0px 165px -53px rgba(0,0,0,0.33);
 }
 .top-bar {
   height: 30vh;
+  background-color: #FEFBF6;
 }
 .data-title {
   justify-content: space-around;
