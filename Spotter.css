@@ -18,7 +18,13 @@ a {
   font-size: 5vh;
   font-family: sans-serif;;
   letter-spacing: 0.5em;
-  color: burlywood;
+  color: #970015;
+  font-weight: bold;
+}
+.logo {
+  border: 5px solid #970015;
+  padding-left: 2vh;
+
 }
 .section-title{
   color: #576569;
